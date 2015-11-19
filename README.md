@@ -6,7 +6,7 @@ npm install mithril-j2c --save
 
 Want to integrate j2c in mithril? Here is how:
 
-## [TLDR;](http://jsfiddle.net/qe805q4q/4/)
+## [TLDR;](http://jsfiddle.net/qe805q4q/10/)
 
 ```javascript
 //- some module -------------------
@@ -24,7 +24,7 @@ function someRandomView() {
   return m('span.' + cls.foo, 'Some random content');
 }
 
-function someDynamiclyStlyedView() {
+function someDynamiclyStlyedView(scope) {
   var cls = styler.liveUpdate({
      '.bar': { background: scope.background }
   });
@@ -38,7 +38,7 @@ var m = require('mithril');
 
 m.mount(document, {
    controller: function() {
-       scope = {
+       var scope = {
            background: 'red'
        };
        setInterval(function() {
