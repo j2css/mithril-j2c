@@ -1,0 +1,28 @@
+{
+  "name": "mithril-j2c",
+  "version": "0.1.0",
+  "description": "j2c integration for mithril ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanHoyer/mithril-j2c.git"
+  },
+  "keywords": [
+    "mithril",
+    "css",
+    "styling",
+    "j2c"
+  ],
+  "author": "Stephan Hoyer <ste.hoyer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StephanHoyer/mithril-j2c/issues"
+  },
+  "homepage": "https://github.com/StephanHoyer/mithril-j2c#readme",
+  "dependencies": {
+    "j2c": "^0.7.3"
+  }
+}
