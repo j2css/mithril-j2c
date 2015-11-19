@@ -1,5 +1,9 @@
 # mithril-j2c
 
+```
+npm install mithril-j2c --save
+```
+
 Want to integrate j2c in mithril? Here is how:
 
 ## [TLDR;](http://jsfiddle.net/qe805q4q/4/)
