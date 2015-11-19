@@ -2,19 +2,18 @@
 
 var m = require('mithril');
 var j2c = require('j2c');
-var styles = '';
 
 var styles = '';
 var liveStyles = '';
 
 module.exports = {
-  liveUpdate: function(style) {
-    var scopedStyle = j2c.sheet(style);
+  liveUpdate: function() {
+    var scopedStyle = j2c.sheet.apply(null, arguments);
     liveStyles += scopedStyle;
     return scopedStyle;
   },
-  attach: function(style) {
-    var scopedStyle = j2c.sheet(style);
+  attach: function() {
+    var scopedStyle = j2c.sheet.apply(null, arguments);
     styles += scopedStyle;
     return scopedStyle;
   },
