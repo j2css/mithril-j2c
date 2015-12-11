@@ -70,7 +70,7 @@ live-generated css classes as values.
 ### `liveUpdate(j2cStyleDefinition)`
 
 This allows to add a dynamic style definition. It also returns the result of
-`j2c.scoped`, same like `attach`. Difference beween them is that the resulting
+`j2c.scoped`, same like `attach`. Difference between them is that the resulting
 css is cleared after redraw. So you have to add this css during every redraw
 cycle.
 
