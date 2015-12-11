@@ -24,7 +24,7 @@ function someRandomView() {
   return m('span.' + cls.foo, 'Some random content');
 }
 
-function someDynamiclyStlyedView(scope) {
+function someDynamiclyStyledView(scope) {
   var cls = styler.liveUpdate({
      '.bar': { background: scope.background }
   });
@@ -50,7 +50,7 @@ m.mount(document, {
    view: function(scope) {
        return [
            someRandomView(),
-           someDynamiclyStlyedView(scope),
+           someDynamiclyStyledView(scope),
            styler.view()
        ];
    }
