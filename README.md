@@ -61,18 +61,26 @@ m.mount(document, {
 
 As you see there are three functions
 
-### `attach(j2cStyleDefinition)`
+### `attach([scope,] j2cStyleDefinition)`
 
 This allows to add a permanent style definition. It returns the result of
-`j2c.scoped` which is a object with the css classes as key and the
+`j2c.sheet` which is a object with the css classes as key and the
 live-generated css classes as values.
 
-### `liveUpdate(j2cStyleDefinition)`
+The optional `scope` is an object that holds `name -> localizedName` mappings, usually in the
+form of the value of another `j2c.sheet()`, `styler.attach()` or
+`styler.livUpdate()` call.
+
+### `liveUpdate([scope,] j2cStyleDefinition)`
 
 This allows to add a dynamic style definition. It also returns the result of
-`j2c.scoped`, same like `attach`. Difference between them is that the resulting
+`j2c.sheet`, same like `attach`. Difference between them is that the resulting
 css is cleared after redraw. So you have to add this css during every redraw
 cycle.
+
+The optional `scope` is an object that holds `name -> localizedName` mappings, usually in the
+form of the value of another `j2c.sheet()`, `styler.attach()` or
+`styler.livUpdate()` call.
 
 ### `view()`
 
