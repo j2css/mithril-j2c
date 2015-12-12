@@ -4,7 +4,7 @@
 npm install mithril-j2c --save
 ```
 
-Want to integrate j2c in mithril? Here is how:
+Want to integrate [j2c](http://j2c.py.gy) in [Mithril](http://mithril.js.org)? Here is how:
 
 ## [TLDR;](http://jsfiddle.net/qe805q4q/10/)
 
